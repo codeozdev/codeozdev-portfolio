@@ -23,7 +23,7 @@ export default function HeroComponent() {
               sizes='60vw'
             />
             <div className='font-sora text-xl md:text-2xl 3xl:text-3xl'>
-              I{`'`}m Oğuzhan {' '} /
+              I{`'`}m Oğuzhan /
               <AnimationTextComponent />
             </div>
             <h1 className='inline-block max-w-[300px] from-[#8B56F7] to-white bg-clip-text text-3xl font-bold leading-tight tracking-wider dark:bg-gradient-to-r dark:text-transparent md:max-w-[600px] md:text-6xl 3xl:max-w-[800px] 3xl:text-7xl'>
@@ -53,7 +53,7 @@ export default function HeroComponent() {
               </li>
             </ul>
           </div>
-          <div className='hidden md:block'>
+          <div className='hidden justify-self-end md:block'>
             <Image
               src='/photo.png'
               alt='img'

@@ -14,6 +14,9 @@ const config: Config = {
       },
       container: {
         center: true,
+        screens: {
+          '2xl': '1400px',
+        },
       },
       fontFamily: {
         sora: ['Sora', 'sans-serif'],
