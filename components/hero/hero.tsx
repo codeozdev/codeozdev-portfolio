@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { BsGithub, BsLinkedin, BsTwitterX } from 'react-icons/bs'
 import AnimationTextComponent from './animate-text'
+import EvervaultImage from './evervault-image'
 
 export default function HeroComponent() {
   return (
@@ -50,15 +51,8 @@ export default function HeroComponent() {
               </li>
             </ul>
           </div>
-          <div className='hidden justify-self-end md:block'>
-            <Image
-              src='/photo.png'
-              alt='img'
-              width={500}
-              height={500}
-              className={`dark:border-primary rotate-6 rounded-3xl object-cover grayscale transition-all duration-300 ease-in-out hover:rotate-0 hover:grayscale-0 dark:border dark:bg-[#140C1C] md:max-h-[360px] md:max-w-[300px] 3xl:max-h-[440px] 3xl:max-w-[400px]`}
-              sizes='60vw'
-            />
+          <div className='absolute hidden justify-self-end md:block'>
+            <EvervaultImage />
           </div>
         </div>
       </div>
