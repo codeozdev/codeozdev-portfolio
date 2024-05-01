@@ -16,7 +16,7 @@ const config: Config = {
         center: true,
       },
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
+        sora: ['Sora', 'sans-serif'],
       },
       screens: {
         '3xl': '2000px',

@@ -1,3 +1,9 @@
-export default function PaddingContainer({ children }: { children: React.ReactNode }) {
-  return <div className='container p-4'>{children}</div>
+import { ReactNode } from 'react'
+
+export default function PaddinContainer({ children }: { children: ReactNode }) {
+  return (
+    <div className='container my-10 flex flex-col items-center justify-center gap-12 text-center md:my-20 md:gap-20 md:text-start'>
+      {children}
+    </div>
+  )
 }

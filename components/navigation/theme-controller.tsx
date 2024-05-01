@@ -6,18 +6,26 @@ import { IoMoonOutline } from 'react-icons/io5'
 import { MdOutlineWbSunny } from 'react-icons/md'
 
 export default function ThemeButton() {
-  const { setTheme, resolvedTheme } = useTheme()
+  const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => setMounted(true), [])
 
   if (!mounted) return null
 
+  const handleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+  }
+
   return (
-    <button
-      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-      className='*:size-4 sm:*:size-5'>
-      {resolvedTheme === 'dark' ? <MdOutlineWbSunny /> : <IoMoonOutline />}
+    <button onClick={handleTheme} className='*:size-4 sm:*:size-5'>
+      {theme === 'dark' ? <MdOutlineWbSunny /> : <IoMoonOutline />}
     </button>
   )
 }
+
+/* 
+
+resolvedTheme kismi ikili durumlarda kullaniliyor yukarda kullandigimiz gibi
+
+*/

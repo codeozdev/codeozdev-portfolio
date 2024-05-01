@@ -1,4 +1,3 @@
-import PaddingContainer from '@/components/layout/padding-container'
 import Header from '@/components/navigation/header'
 import { ThemeProvider } from '@/components/provider/provider'
 import type { Metadata } from 'next'
@@ -21,10 +20,8 @@ export default function RootLayout({
     <html lang='en' suppressContentEditableWarning>
       <body className={inter.className}>
         <ThemeProvider>
-          <PaddingContainer>
-            <Header />
-            {children}
-          </PaddingContainer>
+          <Header />
+          {children}
         </ThemeProvider>
       </body>
     </html>
