@@ -4,7 +4,6 @@ import { BsGithub, BsLinkedin, BsTwitterX } from 'react-icons/bs'
 import AnimationTextComponent from './animate-text'
 
 export default function HeroComponent() {
-  const li = `hover:scale-110 duration-500 ease-in-out cursor-pointer border border-red-500 dark:border-[#8750F7] rounded-full fill-[#8750F7] p-2`
   const isDark = `dark:bg-[#140C1C] dark:border-[#8650F6] dark:border`
 
   return (
@@ -26,7 +25,7 @@ export default function HeroComponent() {
               I{`'`}m Oğuzhan /
               <AnimationTextComponent />
             </div>
-            <h1 className='inline-block max-w-[300px] from-[#8B56F7] to-white bg-clip-text text-3xl font-bold leading-tight tracking-wider dark:bg-gradient-to-r dark:text-transparent md:max-w-[600px] md:text-6xl 3xl:max-w-[800px] 3xl:text-7xl'>
+            <h1 className='inline-block max-w-[300px] bg-gradient-to-r from-[#8B56F7] to-white bg-clip-text text-3xl font-bold leading-tight tracking-wider text-transparent md:max-w-[600px] md:text-6xl 3xl:max-w-[800px] 3xl:text-7xl'>
               Web Developer + UX Designer
             </h1>
             <p className='text-center font-sora text-sm tracking-wide md:max-w-[600px] md:text-start  md:text-base 3xl:max-w-[800px] 3xl:text-lg'>
@@ -36,17 +35,17 @@ export default function HeroComponent() {
               solutions.
             </p>
             <ul className='flex items-center justify-center gap-5 md:justify-start'>
-              <li className={li}>
+              <li className='cursor-pointer rounded-full border border-[#8750F7] fill-[#8750F7] p-2 duration-500 ease-in-out hover:scale-110'>
                 <Link href='#'>
                   <BsTwitterX />
                 </Link>
               </li>
-              <li className={li}>
+              <li className='cursor-pointer rounded-full border border-[#8750F7] fill-[#8750F7] p-2 duration-500 ease-in-out hover:scale-110'>
                 <Link href='#'>
                   <BsLinkedin />
                 </Link>
               </li>
-              <li className={li}>
+              <li className='cursor-pointer rounded-full border border-[#8750F7] fill-[#8750F7] p-2 duration-500 ease-in-out hover:scale-110'>
                 <Link href='#'>
                   <BsGithub />
                 </Link>

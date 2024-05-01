@@ -13,14 +13,14 @@
 /*UNDERLINE*/
 @layer components {
   .navbar_link:hover {
-    color: #ef4444;
+    color: #8b56f7;
     transition: all 0.4s;
   }
 
   .navbar_link::after {
     position: absolute;
     content: '';
-    background-color: #ef4444;
+    background-color: #8b56f7;
     height: 3px;
     width: 100%;
     bottom: -5px;
