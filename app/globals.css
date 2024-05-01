@@ -38,9 +38,3 @@
 .dark-gradient {
   background: radial-gradient(farthest-corner at 50% 50%, transparent, rgb(9, 9, 11) 75%);
 }
-
-@layer base {
-  h3 {
-    @apply font-sora text-xl md:text-3xl 3xl:text-4xl;
-  }
-}

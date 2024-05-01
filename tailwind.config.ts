@@ -18,6 +18,9 @@ const config: Config = {
           '2xl': '1400px',
         },
       },
+      colors: {
+        primary: '#8650F6',
+      },
       fontFamily: {
         sora: ['Sora', 'sans-serif'],
       },
