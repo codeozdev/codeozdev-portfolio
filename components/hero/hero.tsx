@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { BsGithub, BsLinkedin, BsTwitterX } from 'react-icons/bs'
+import AnimationTextComponent from './animate-text'
 
 export default function HeroComponent() {
   const li = `hover:scale-110 duration-500 ease-in-out cursor-pointer border border-red-500 dark:border-[#8750F7] rounded-full fill-[#8750F7] p-2`
@@ -21,11 +22,14 @@ export default function HeroComponent() {
               className={`mb-5 max-h-40 w-full max-w-40 rounded-full object-cover object-top grayscale hover:grayscale-0 sm:mb-0 md:hidden ${isDark}`}
               sizes='60vw'
             />
-            <h3>I{`'`}m Oğuzhan</h3>
-            <h1 className='3xl:text-7xl 3xl:max-w-[800px] inline-block max-w-[300px] from-[#8B56F7] to-white bg-clip-text text-3xl font-bold leading-tight tracking-wider md:max-w-[600px] md:text-6xl dark:bg-gradient-to-r dark:text-transparent'>
+            <div className='font-sora text-xl md:text-2xl 3xl:text-3xl'>
+              I{`'`}m Oğuzhan {' '} /
+              <AnimationTextComponent />
+            </div>
+            <h1 className='inline-block max-w-[300px] from-[#8B56F7] to-white bg-clip-text text-3xl font-bold leading-tight tracking-wider dark:bg-gradient-to-r dark:text-transparent md:max-w-[600px] md:text-6xl 3xl:max-w-[800px] 3xl:text-7xl'>
               Web Developer + UX Designer
             </h1>
-            <p className='font-sora 3xl:max-w-[800px] text-center text-sm tracking-wide md:max-w-[600px]  md:text-start md:text-base 3xl:text-lg'>
+            <p className='text-center font-sora text-sm tracking-wide md:max-w-[600px] md:text-start  md:text-base 3xl:max-w-[800px] 3xl:text-lg'>
               I have been working in both frontend and backend development for 1.5 years, and I am
               passionate about keeping up with industry inn ovations and adapting to new
               technologies. I am confident in my ability to solve problems and produce efficient
@@ -55,14 +59,14 @@ export default function HeroComponent() {
               alt='img'
               width={500}
               height={500}
-              className={`3xl:max-h-[440px] 3xl:max-w-[400px] rotate-6 rounded-3xl object-cover grayscale transition-all duration-300 ease-in-out hover:rotate-0 hover:grayscale-0 md:max-h-[360px] md:max-w-[300px] ${isDark}`}
+              className={`rotate-6 rounded-3xl object-cover grayscale transition-all duration-300 ease-in-out hover:rotate-0 hover:grayscale-0 md:max-h-[360px] md:max-w-[300px] 3xl:max-h-[440px] 3xl:max-w-[400px] ${isDark}`}
               sizes='60vw'
             />
           </div>
         </div>
       </div>
       {/*overlay*/}
-      <div className="absolute inset-0 h-full w-full md:bg-left dark:animate-pulse dark:bg-[url('/Untitled.jpg')]" />
+      <div className="absolute inset-0 h-full w-full dark:animate-pulse dark:bg-[url('/Untitled.jpg')] md:bg-left" />
       <div className='dark-gradient inset-0 h-full w-full dark:absolute' />
     </div>
   )
