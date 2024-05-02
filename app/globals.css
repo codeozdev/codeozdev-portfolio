@@ -48,3 +48,31 @@
 .dark-gradient {
   background: radial-gradient(farthest-corner at 50% 50%, transparent, rgb(9, 9, 11) 75%);
 }
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* link animasyonu */
+@keyframes rotate-360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-element {
+  transition: transform 0.3s; /* Dönme animasyonunun geçiş süresi */
+}
+
+.main:hover .rotate-element {
+  transform: rotate(360deg);
+}
