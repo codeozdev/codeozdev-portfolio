@@ -41,7 +41,9 @@ export function TabsDemo() {
   })
 
   return (
-    <div className='b relative mx-auto flex h-[20rem] w-full max-w-5xl flex-col items-start justify-start [perspective:1000px] md:h-[40rem] md:mt-[3.5rem] mb-10 md:mb-20'>
+    <div
+      className='b relative mx-auto flex h-[20rem] w-full max-w-5xl flex-col items-start justify-start [perspective:1000px] md:h-[40rem] md:mt-[3.5rem] mb-10 md:mb-20'
+      id='projects'>
       <Tabs tabs={tabs} />
     </div>
   )
