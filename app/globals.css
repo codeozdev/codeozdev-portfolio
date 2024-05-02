@@ -35,6 +35,16 @@
   }
 }
 
+@layer base {
+  h2 {
+    @apply inline-block from-[#8B56F7] to-white bg-clip-text text-center font-sora text-2xl font-bold text-black dark:bg-gradient-to-r dark:text-transparent md:my-5 md:text-5xl;
+  }
+
+  h3 {
+    @apply mt-4 px-2 text-[11px] font-semibold uppercase tracking-wider shadow-lg dark:bg-black md:mb-3 md:mt-10 md:w-fit;
+  }
+}
+
 .dark-gradient {
   background: radial-gradient(farthest-corner at 50% 50%, transparent, rgb(9, 9, 11) 75%);
 }

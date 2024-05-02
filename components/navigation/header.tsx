@@ -11,7 +11,7 @@ export default function Header() {
           </Link>
         </li>
         <li>
-          <Link href='#skills' className='navbar_link relative'>
+          <Link href='#skill' className='navbar_link relative'>
             Skills
           </Link>
         </li>

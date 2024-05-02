@@ -17,14 +17,14 @@ export default function HeroComponent() {
               alt='img'
               width={500}
               height={500}
-              className={`dark:border-primary mb-5 max-h-40 w-full max-w-40 rounded-full object-cover object-top grayscale hover:grayscale-0 dark:border dark:bg-[#140C1C] sm:mb-0 md:hidden`}
+              className={`mb-5 max-h-40 w-full max-w-40 rounded-full object-cover object-top grayscale hover:grayscale-0 dark:border dark:border-primary dark:bg-[#140C1C] sm:mb-0 md:hidden`}
               sizes='60vw'
             />
             <div className='font-sora text-xl md:text-2xl 3xl:text-3xl'>
               I{`'`}m Oğuzhan /
               <AnimationTextComponent />
             </div>
-            <h1 className='from-primary inline-block max-w-[300px] bg-gradient-to-r to-white bg-clip-text text-3xl font-bold leading-tight tracking-wider text-transparent md:max-w-[600px] md:text-6xl 3xl:max-w-[800px] 3xl:text-7xl'>
+            <h1 className='inline-block max-w-[300px] bg-gradient-to-r from-primary to-white bg-clip-text text-3xl font-bold leading-tight tracking-wider text-transparent md:max-w-[600px] md:text-6xl 3xl:max-w-[800px] 3xl:text-7xl'>
               Web Developer + UX Designer
             </h1>
             <p className='text-center font-sora text-sm tracking-wide md:max-w-[600px] md:text-start  md:text-base 3xl:max-w-[800px] 3xl:text-lg'>
@@ -34,17 +34,17 @@ export default function HeroComponent() {
               solutions.
             </p>
             <ul className='flex items-center justify-center gap-5 md:justify-start'>
-              <li className='border-primary fill-primary cursor-pointer rounded-full border p-2 duration-500 ease-in-out hover:scale-110'>
+              <li className='cursor-pointer rounded-full border border-primary fill-primary p-2 duration-500 ease-in-out hover:scale-110'>
                 <Link href='#'>
                   <BsTwitterX />
                 </Link>
               </li>
-              <li className='border-primary fill-primary cursor-pointer  rounded-full border p-2 duration-500 ease-in-out hover:scale-110'>
+              <li className='cursor-pointer rounded-full border  border-primary fill-primary p-2 duration-500 ease-in-out hover:scale-110'>
                 <Link href='#'>
                   <BsLinkedin />
                 </Link>
               </li>
-              <li className='border-primary fill-primary cursor-pointer  rounded-full border p-2 duration-500 ease-in-out hover:scale-110'>
+              <li className='cursor-pointer rounded-full border  border-primary fill-primary p-2 duration-500 ease-in-out hover:scale-110'>
                 <Link href='#'>
                   <BsGithub />
                 </Link>
