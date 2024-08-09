@@ -35,7 +35,7 @@ export default function HeroComponent() {
             </p>
             <ul className="flex items-center justify-center gap-5 md:justify-start">
               <li className="cursor-pointer rounded-full border border-primary fill-primary p-2 duration-500 ease-in-out hover:scale-110">
-                <Link href="https://x.com/codeozdev" target="_blank">
+                <Link href="" target="_blank">
                   <BsTwitterX />
                 </Link>
               </li>
